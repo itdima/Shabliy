@@ -1,0 +1,13 @@
+Order Allow,Deny
+Allow from all
+AddDefaultCharset utf-8
+
+php_value upload_tmp_dir "D:\"
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+
+

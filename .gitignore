@@ -1,0 +1,18 @@
+# phpstorm project files
+.idea
+
+# windows thumbnail cache
+Thumbs.db
+
+#Картинки
+images
+
+# composer vendor dir
+project/vendor
+
+# composer itself is not needed
+project/composer.phar
+
+#Настройки
+project/config/db.php
+project/config/params.php

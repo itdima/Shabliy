@@ -1,0 +1,175 @@
+/* Подключаем шрифт */
+@font-face {
+    font-family: Bodoni;
+    src: url('/../familialvaluesweb/fonts/bodoni.ttf');
+}
+
+html,
+body {
+    height: 100%;
+	background: url('/../familialvaluesweb/img/fon.jpg') repeat top left #f0f0f0;
+    margin: 0!important;
+    padding: 0!important;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    --font-family: cursive;
+
+}
+
+.bodoni{
+    font-family: Bodoni,cursive;
+    font-size: 20px;
+    line-height: 1.8;
+
+}
+
+.bear-info > p > img{
+    width:100%;
+}
+
+/* Логотип */
+#logo{
+    margin:10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Кнопки */
+
+.btn-default{
+    background-color: transparent;
+}
+
+.btn-default:hover {
+    color: #1f1f1f;
+    background-color: transparent;
+}
+
+/* Гиперссылки */
+
+a:hover, a:focus {
+    color: #1f1f1f;
+}
+
+a {
+    color: #565750;
+    text-decoration: none;
+}
+
+
+/* ---------------  Звездочка для обязательных полей --------------*/
+div.required label:after {
+    content: " *";
+    color: red;
+}
+
+/*
+ -------------   Навигационная панель  --------------------
+*/
+
+.navbar-default {
+    background-color: transparent;
+    border-color: #ccc;
+    border-width: 2px;
+    --background-color: #D8CBD7;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    --border-top: 1px solid #1f1f1f;
+    --border-bottom: 1px solid #1f1f1f;
+}
+/*
+-------------------    Хлебные крошки  -----------------
+*/
+.breadcrumb {
+    background-color: transparent;
+}
+
+/* ---------------  Блоки Thumbnails для каталога --------------*/
+
+div.thumbnail.shadow
+{
+    --background: url("/familialvalues/web/img/polosi.png") repeat top left #f0f0f0;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+div.thumbnail.shadow:before, div.thumbnail.shadow:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+div.thumbnail.shadow:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+}
+
+/*  ---------------  Футер --------------*/
+.footer p{
+    margin: 0;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 10px 15px 10px;
+}
+
+#socseti i {
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+#socseti div.btn-default {
+    height:32px;
+    width:32px;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+a.footer-a {
+    color: #333;
+}
+
+.footer {
+    height: 60px;
+    padding-top: 10px;
+    border-top: 2px solid #ccc;
+}
+
+
+
